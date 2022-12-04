@@ -12,7 +12,6 @@
     --contrast-color: #F29F05;
 }
 body {
-    height: 500vh;
     background-color: #012340;
 }
 h2 {
@@ -37,7 +36,7 @@ button {
     text-align: center;
     background-color: var(--bg-color1);
     color: var(--bg-color2);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bolder;
     width: 140px;
     border-radius: 10px;
@@ -258,9 +257,11 @@ p {
 }
 
 #promo-banner {
+    position: relative;
     background-color: #F29F05;
     width: 100%;
     display: flex;
+    box-shadow: 4px 8px 11px 0px #706b6b30;
 }
 .banner-img {
     width: 50%;
@@ -270,7 +271,16 @@ p {
     height: 100%;
 }
 
-
+#index-page #products  {
+    padding-top: 50px;
+}
+#index-page #products .products-title {
+    color: var(--bg-color1);
+}
+#index-page #products {
+    background-color: var(--bg-color2);
+}
+  
 
 
 
@@ -278,10 +288,10 @@ p {
 #products-page {
     background-color: var(--bg-color2);
 }
-#products h2 {
+.products-title {
     text-align: center;
 }
-#games {
+.games {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
