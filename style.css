@@ -50,7 +50,7 @@ button {
 
 .top-header {
     width: 100%;
-    height: 32px;
+    height: 40px;
     background-color: var(--bg-color1);
     color: var(--bg-color2);
     display: flex;
@@ -64,7 +64,7 @@ button {
     border-radius: 10px;
 }
 .bottom-header {
-    box-shadow: 1px 3px 3px #706b6b30;
+    box-shadow: 4px 8px 11px 0px #706b6b30;
     position: sticky;
     top: 0;
     left: 0;
@@ -72,7 +72,7 @@ button {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 40px;
+    height: 56px;
     background-color: var(--bg-color2);
     padding: 0 140px 0 70px;
     z-index: 99;
@@ -109,21 +109,21 @@ nav li a {
 nav li a::after {
     content: "";
     width: 0;
-    height: 2px;
+    height: 3px;
     background-color: var(--bg-color1);
     position: absolute;
     left: 12px;
-    top: 28px;
+    top: 38px;
     transition: all ease 0.3s;
 }
 nav li a.active::after,  nav li a:hover::after {
     content: "";
     width: calc(100% - 24px);
-    height: 2px;
+    height: 3px;
     background-color: var(--bg-color1);
     position: absolute;
     left: 12px;
-    top: 28px;
+    top: 38px;
 
 }
  
@@ -268,4 +268,85 @@ p {
 .banner-img img {
     width: 100%;
     height: 100%;
+}
+
+
+
+
+
+/* produtos */
+#products-page {
+    background-color: var(--bg-color2);
+}
+#products h2 {
+    text-align: center;
+}
+#games {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+#products-page  #main h2 {
+    color: var(--bg-color1);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin: 30px 20px 0px 0px;
+  cursor: pointer;
+  transition: all ease .3s;
+  padding: 20px ;
+}
+.game:hover {
+    transform: scale(1.1);
+    background-color: #cbd2d48a;
+    border-radius: 20px;
+}
+.game img {
+    object-fit: cover;
+    margin: auto;
+    width: 200px;
+    height: 250px;
+    margin-bottom: 4px;
+}
+.game .version {
+    margin-bottom: 4px;
+}
+.game-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.game-info a {
+    text-decoration: none;
+    border: 1px solid var(--bg-color1);
+    border-radius: 50%;
+    padding: 10px;
+    color: #012340;
+    transition: all ease .3S;
+}
+.game-info a:hover  {
+    background-color: #012340;
+    color: var(--bg-color2);
+}
+.game h3 {
+    font-size: 18px;
+}
+.game-price {
+    font-weight: 600;
+}
+.descount {
+    width: 60px;
+    height: 30px;
+    background-color:  var(--bg-color1);
+    text-align: center;
+    color: var(--bg-color2);
+}
+
+.product-model {
+    display: none;
 }
